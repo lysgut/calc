@@ -1,25 +1,26 @@
 let result = document.getElementById('result');
 
 function insert(char) {
-  result.value += char;
+  result.innerText += char;
+  console.log(result.innerText)
 }
 
 function clearResult() {
-  result.value = '';
+  result.innerText = '';
 }
 
 function backspace() {
-  result.value = result.value.slice(0, -1);
+  result.innerText = result.innerText.slice(0, -1);
 }
 
 function calculate() {
-  let expression = result.value;
-
-  if (expression) {
-    try {
-      result.value = eval(expression);
-    } catch (error) {
-      result.value = 'Error';
+    let expression = result.innerText;
+  
+    if (expression) {
+      try {
+        result.innerText = eval(expression);
+      } catch (error) {
+        result.innerText = 'Error';
+      }
     }
   }
-}
