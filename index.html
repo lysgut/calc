@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
     <div class="calculator">
-        <input type="text" id="result" disabled>
+        <input type="text" id="result">
         <button onclick="clearResult()">C</button>
         <button onclick="backspace()">&larr;</button>
         <button onclick="insert('%')">%</button>
@@ -28,10 +28,10 @@
         <button onclick="insert('3')">3</button>
         <button onclick="insert('+')">+</button>
         <button onclick="insert('0')">0</button>
-        <button onclick="insert('.')">.</button>
+        <button onclick="insert('(')">(</button>
+        <button onclick="insert(')')">)</button>
+        <button onclick="insert('.')">,</button>
         <button onclick="calculate()">=</button>
       </div>
 </body>
 </html>
-
-  
